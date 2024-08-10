@@ -1,214 +1,325 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body {
-    background-color: white;
+.banner {
+  padding: 1rem;
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-color: rgba(100, 198, 243, 0.315);
 }
 
-.huddle {
-    display: flex;
-    width: 100%;
-    background-image: url(../images/bg-hero-desktop.svg);
-    background-color: rgba(100, 198, 243, 0.315);
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  max-width: 1400px;
+  margin-inline: auto;
+  margin-bottom: 5rem;
 }
 
-.huddle img {
-    width: 140px;
-    height: 30px;
-    margin: 30px 60px;
+.header img {
+  width: 150px;
+  object-fit: contain;
 }
 
-.community {
-    width: 500px;
-    border: none;
+.header button {
+  background-color: white;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.build {
-    width: 400px;
-    height: 300px;
-    border: none;
-    margin: 30px 60px;
-    padding: 10px;
+.hero {
+  width: 100%;
+  padding: 20px;
+  max-width: 1400px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
-.build h1 {
-    font-size: 35px;
+.details,
+.hero-img {
+  flex: 1;
 }
 
-.build p {
-    margin-top: 30px;
-    font-size: 15px;
+.details h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  width: 85%;
 }
 
-.build button {
-    width: 200px;
-    color: white;
-    background-color: deeppink;
-    border: 1px solid deeppink;
-    border-radius: 25px;
-    margin-top: 40px;
-    padding: 15px;
+.details p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  width: 80%;
 }
 
-.try {
-    width: 650px;
-    border: none;
-    margin-left: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.details button {
+  color: white;
+  background-color: deeppink;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
-.try button {
-    width: 180px;
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 15px;
-    font-size: 18px;
-    padding: 6px;
-    margin-top: 30px;
+.hero-img img {
+  width: 100%;
+  object-fit: contain;
 }
 
-.try img {
-    width: 500px;
-    height: 400px;
+.grow,
+.flowing,
+.users {
+  width: 100%;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 10px 10px rgb(243, 240, 240);
+  margin-block: 5rem;
 }
 
-.grow, .flowing, .users {
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    margin: auto;
-    border: 3px solid white;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px 10px rgb(243, 240, 240);
+.growTogether,
+.flowingConversations,
+.yourUsers {
+  flex: 1;
 }
 
-.ready {
-    width: 500px;
-    margin: auto;
-    border: 3px solid white;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px 10px rgb(243, 240, 240);
-    padding: 15px;
-}
-
-.grow, .ready {
-    margin-top: 80px;
-}
-
-.flowing, .users {
-    margin-top: 50px;
-}
-
-.growTogether, .flowingConversations, .yourUsers {
-    width: 700px;
-    margin: auto;
-    padding: 70px;
-}
-
-.growTogether p, .flowingConversations p, .yourUsers p {
-    font-size: 18px;
-    margin-top: 15px;
+.growTogether p,
+.flowingConversations p,
+.yourUsers p {
+  font-size: 18px;
+  margin-top: 15px;
 }
 
 .image {
-    width: 500px;
-    margin-top: 20px;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.grow img, .flowing img {
-    width: 300px;
-
-}
-
+.grow img,
+.flowing img,
 .users img {
-    width: 360px;
+  width: 70%;
+  object-fit: contain;
 }
 
-.flowing img {
-    margin: 30px 40px;
+.flowing .image {
+  justify-content: flex-start;
 }
 
-.ready h2 {
-    text-align: center;
-    margin-top: 20px;
-
+.ready {
+  width: 600px;
+  margin-inline: auto;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .ready button {
-    width: 250px;
-    color: white;
-    background-color: deeppink;
-    border: 1px solid deeppink;
-    border-radius: 25px;
-    margin: 30px 90px;
-    padding: 15px;
-
+  color: white;
+  background-color: deeppink;
+  border: none;
+  border-radius: 3rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  font-size: 1.1rem;
 }
 
 .info {
-    width: 100%;
-    display: flex;
-    border: 1px solid rgba(2, 2, 39, 0.979);
-    background-color: rgba(2, 2, 39, 0.979);
-    color: white;
-    margin-top: 40px;
-    padding: 50px;
+  background-color: rgba(2, 2, 39, 0.979);
+  color: white;
+  padding: 4rem;
+  padding-top: 10rem;
+  margin-top: -7rem;
+  position: relative;
+  z-index: 1;
 }
 
-.info1 img {
-    width: 200px;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8rem;
 }
 
-.location {
-    width: 300px;
-    margin-top: 20px;
+.info1,
+.info2,
+.info3,
+.info4 {
+  flex: 1;
 }
 
-.location, .phone, .email {
-    display: flex;
+.footer-img {
+  width: 180px;
+  filter: invert(1);
+  margin-bottom: 2rem;
 }
 
-.location p, .phone p, .email p {
-    margin: 10px 10px;
+.footer-img img {
+  width: 100%;
+  object-fit: contain;
 }
 
-.location img, .phone img, .email img {
-    margin-top: 10px;
-    width: 15px;
-    height: 15px;
+.location,
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-.info2, .info3, .info4 {
-    margin-left: 30px;
-    padding: 60px;
+.location img,
+.phone img,
+.email img {
+  width: 15px;
+  object-fit: contain;
 }
 
-.info2 p, .info3 p {
-    margin-top: 15px;
+.info2,
+.info3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  font-size: 1.1rem;
 }
 
-.info4 p {
-    margin-top: 180px;
+.info4 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .info4 img {
-    width: 25px;
-    background-color: white;
-    margin-top: 15px;
-}
-.build button, .try button, .ready button , .info4 img:hover {
-    cursor: pointer;
-}
-.info2 p:hover{
-    cursor: pointer;
-    text-decoration: underline;
-}
-.info4 img:hover{
-    background-color: deeppink;
+  width: 25px;
+  filter: invert(1);
 }
 
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header img {
+    width: 120px;
+  }
+
+  .header button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .details h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .details p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .details button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  .grow,
+  .flowing,
+  .users {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    width: 90%;
+    text-align: center;
+  }
+
+  .flowing {
+    flex-direction: column;
+  }
+
+  .grow img,
+  .flowing img,
+  .users img {
+    width: 100%;
+  }
+
+  .ready {
+    width: 90%;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .ready button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  .info {
+    padding: 2rem;
+    padding-top: 10rem;
+    margin-top: -5rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-img {
+    width: 150px;
+  }
+
+  .info2,
+  .info3 {
+    font-size: 1rem;
+  }
+
+  .info4 img {
+    width: 20px;
+  }
+
+  .copyright {
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+}
